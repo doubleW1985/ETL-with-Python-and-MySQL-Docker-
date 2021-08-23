@@ -58,3 +58,14 @@ CREATE TABLE `tt_sku` (
   CONSTRAINT fk_sku_tail_id FOREIGN KEY(`sku_tail_id`) REFERENCES sku_tail(`id`)
   ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+CREATE TABLE `sales_quantity_by_brand` (
+  `brand` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `quantity` int(10) DEFAULT NULL,
+  PRIMARY KEY (`brand`)
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE `sales_quantity_by_daily` (
+  `created_date` date NOT NULL,
+  `quantity` int(10) DEFAULT NULL,
+  PRIMARY KEY (`created_date`)
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
