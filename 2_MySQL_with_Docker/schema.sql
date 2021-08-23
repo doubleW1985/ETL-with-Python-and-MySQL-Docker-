@@ -64,7 +64,7 @@ CREATE TABLE `sales_quantity_by_brand` (
   PRIMARY KEY (`brand`)
   ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-CREATE TABLE `sales_quantity_by_daily` (
+CREATE TABLE `sales_quantity_by_created_date` (
   `created_date` date NOT NULL,
   `quantity` int(10) DEFAULT NULL,
   PRIMARY KEY (`created_date`)
