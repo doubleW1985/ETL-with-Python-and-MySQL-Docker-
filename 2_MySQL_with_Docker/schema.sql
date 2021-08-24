@@ -9,6 +9,8 @@ DROP TABLE IF EXISTS `brand`;
 DROP TABLE IF EXISTS `model`;
 DROP TABLE IF EXISTS `sku_tail`;
 DROP TABLE IF EXISTS `tt_sku`;
+DROP TABLE IF EXISTS `sales_quantity_by_brand`;
+DROP TABLE IF EXISTS `sales_quantity_by_created_date`;
 
 CREATE TABLE `sku_head` (
   `id` varchar(45) COLLATE utf8mb4_unicode_ci NOT NULL,
